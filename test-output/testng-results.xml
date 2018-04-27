@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="36243" started-at="2018-04-26T11:05:51Z" finished-at="2018-04-26T11:06:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="36243" started-at="2018-04-26T11:05:51Z" finished-at="2018-04-26T11:06:28Z">
+      <class name="testcases_landsend.TC012_SSalesOrder">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases_landsend.TC012_SSalesOrder@136e911]" name="beforeSuite" is-config="true" duration-ms="1173" started-at="2018-04-26T11:05:50Z" finished-at="2018-04-26T11:05:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases_landsend.TC012_SSalesOrder@136e911]" name="setData" is-config="true" duration-ms="0" started-at="2018-04-26T11:05:51Z" finished-at="2018-04-26T11:05:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases_landsend.TC012_SSalesOrder@136e911]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-04-26T11:05:51Z" finished-at="2018-04-26T11:05:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases_landsend.TC012_SSalesOrder@136e911]" name="beforeMethod" is-config="true" duration-ms="12291" started-at="2018-04-26T11:05:52Z" finished-at="2018-04-26T11:06:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sSalesOrder(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases_landsend.TC012_SSalesOrder@136e911]" name="sSalesOrder" duration-ms="22597" started-at="2018-04-26T11:06:04Z" data-provider="fetchData" finished-at="2018-04-26T11:06:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[prasanth.sundaresan@landsend.com.qa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ppm@2018]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Prasanth Sundaresan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sSalesOrder -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases_landsend.TC012_SSalesOrder@136e911]" name="afterMethod" is-config="true" duration-ms="775" started-at="2018-04-26T11:06:27Z" finished-at="2018-04-26T11:06:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases_landsend.TC012_SSalesOrder@136e911]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-04-26T11:06:28Z" finished-at="2018-04-26T11:06:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases_landsend.TC012_SSalesOrder@136e911]" name="afterSuite" is-config="true" duration-ms="595" started-at="2018-04-26T11:06:28Z" finished-at="2018-04-26T11:06:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testcases_landsend.TC012_SSalesOrder -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
