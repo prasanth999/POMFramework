@@ -15,12 +15,33 @@ public class SAccountWindow extends ProjectMethods{
 			PageFactory.initElements(driver,this);
 		}
 		
+		@FindBy(how=How.XPATH,using="//input[@name='lksrch']")
+		private WebElement eleEnterSearch;
+		
+		public SAccountWindow enterSearch(String data) {
+			switchToFrame(locateElement("searchFrame"));
+			type(eleEnterSearch, data);
+			return this;
+		}
+		
+		@FindBy(how=How.XPATH,using="//input[@name='go']")
+		private WebElement eleGoButton;
+		
+		
+		public SAccountWindow clickGoButton() {
+			clickWithNoSnap(eleGoButton);
+			driver.switchTo().defaultContent();
+			return this;		
+		}
+		
 		@FindBy(how=How.XPATH,using="//a[text()='Delta UAT Testing']")
 		private WebElement eleAccountNameLink;
 		
 		
-		public SHomePage clickAccountNameLink() {
+		public SHomePage clickAccountNameLink() throws InterruptedException {
+			
 			switchToFrame(locateElement("resultsFrame"));
+			Thread.sleep(5000);
 			clickWithNoSnap(eleAccountNameLink);
 			switchToWindow(0);
 			return new SHomePage();		

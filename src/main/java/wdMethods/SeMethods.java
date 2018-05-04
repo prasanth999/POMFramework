@@ -15,6 +15,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.InvalidElementStateException;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.NoSuchFrameException;
@@ -25,12 +26,14 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javafx.scene.AccessibleAction;
 import utils.Reporter;
 
 public class SeMethods extends Reporter implements WdMethods{
@@ -121,6 +124,19 @@ public class SeMethods extends Reporter implements WdMethods{
 		}
 	}
 
+	public void typeEnter(WebElement ele, String data,Keys keys) {
+		try {
+			ele.clear();
+			ele.sendKeys(data,keys);
+			String x = ""+ele;
+			reportStep("The data: "+data+" entered successfully in the field :"+ele, "PASS");
+		} catch (InvalidElementStateException e) {
+			reportStep("The data: "+data+" could not be entered in the field :"+ele,"FAIL");
+		} catch (WebDriverException e) {
+			reportStep("Unknown exception occured while entering "+data+" in the field :"+ele, "FAIL");
+		}
+	}
+	
 	public void click(WebElement ele) {
 		String text = "";
 		try {
@@ -369,6 +385,36 @@ public class SeMethods extends Reporter implements WdMethods{
 		return number;
 	}
 
+public void moveMouseOver(WebElement ele) {
+		
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, 10);
+			wait.until(ExpectedConditions.elementToBeClickable(ele));			
+			Actions builder = new Actions(driver);
+			builder.moveToElement(ele).perform();
+			reportStep("The element "+ele+" do actions as moveMouseOver", "PASS");
+		} catch (InvalidElementStateException e) {
+			reportStep("The element: "+ele+" could not do actions as moveMouseOver", "FAIL");
+		} catch (WebDriverException e) {
+			reportStep("Unknown exception occured while clicking in the field :", "FAIL");
+		} 
+	}
+	
+public void moveMouseOverClick(WebElement ele) {
+		
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, 10);
+			wait.until(ExpectedConditions.elementToBeClickable(ele));			
+			Actions builder = new Actions(driver);
+			builder.click(ele).perform();
+			reportStep("The element "+ele+" is clicked", "PASS");
+		} catch (InvalidElementStateException e) {
+			reportStep("The element: "+ele+" could not be clicked", "FAIL");
+		} catch (WebDriverException e) {
+			reportStep("Unknown exception occured while clicking in the field :", "FAIL");
+		} 
+	}
+	
 	public void closeBrowser() {
 		try {
 			driver.close();
@@ -386,6 +432,9 @@ public class SeMethods extends Reporter implements WdMethods{
 			reportStep("Unexpected error occured in Browser","FAIL", false);
 		}
 	}
+
+	
+	
 
 
 

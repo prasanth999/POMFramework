@@ -46,7 +46,7 @@ public class ProjectMethods extends SeMethods{
 
 	@AfterMethod
 	public void afterMethod(){
-		closeAllBrowsers();
+	//	closeAllBrowsers();
 
 	}
 

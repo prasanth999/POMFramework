@@ -81,12 +81,14 @@
 				<version>2.19.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng_maven.xml</suiteXmlFile>
+						<!-- <suiteXmlFile>testng_maven.xml</suiteXmlFile> -->
+						<suiteXmlFile>testng_myntra.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>Leaftaps</finalName>
+		<!-- <finalName>Leaftaps</finalName> -->
+		<finalName>myntraexercise</finalName>
 	</build>
 </project>
 

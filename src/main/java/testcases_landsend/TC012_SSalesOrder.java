@@ -20,7 +20,7 @@ public class TC012_SSalesOrder extends ProjectMethods{
 		dataSheetName="TC012";
 	}
 	@Test(dataProvider="fetchData")
-	public void sSalesOrder(String uName,String pwd,String vName) {
+	public void sSalesOrder(String uName,String pwd,String vName,String search,String data1) throws InterruptedException {
 		new SLoginPage()
 		.enterUserName(uName)
 		.enterPassword(pwd)
@@ -29,7 +29,13 @@ public class TC012_SSalesOrder extends ProjectMethods{
 		.clickSalesorderMenu()
 		.clickNewSalesorderButton()
 		.clickAccountIcon()
-		.clickAccountNameLink();
+		.enterSearch(search)
+		.clickGoButton()
+		.clickAccountNameLink()
+		.clickContactIcon()
+		.clickShowLink()
+		.clickContactLink()
+		.clickOrderDate(data1);
 	}
 
 }
