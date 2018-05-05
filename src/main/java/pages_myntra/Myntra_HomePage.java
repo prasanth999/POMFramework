@@ -21,11 +21,11 @@ import wdMethods.ProjectMethods;
 
 
 public class Myntra_HomePage extends ProjectMethods {
-	 static String text;
+	static String text;
 	public Myntra_HomePage() {		
 		PageFactory.initElements(driver,this);
 	}	
-
+	
 	@FindBy(how=How.CLASS_NAME,using="desktop-searchBar")
 	private WebElement eleEnterValue;
 	@And("Enter the sunglass from the search textbox as (.*)")

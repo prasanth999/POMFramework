@@ -9,19 +9,19 @@ import cucumber.api.java.en.When;
 import wdMethods.ProjectMethods;
 
 public class Myntra_PDPpage extends ProjectMethods {
-	
+	 String text1;
 	public Myntra_PDPpage() {		
 		PageFactory.initElements(driver,this);
 	}	
-	String text1;
+	
 	@FindBy(how=How.XPATH,using="//h1[@class='pdp-title']")
 	private WebElement eleverifyonProduct;
 	@When("verify the name of product")
-	public Myntra_PDPpage verifyonProductName(String text) {
+	public String verifyonProductName(String text) {
 
 		System.out.println(getText(eleverifyonProduct));
 		verifyPartialText(eleverifyonProduct,text);
-		return this;
+		return text;
 
 		//return text;		
 	}

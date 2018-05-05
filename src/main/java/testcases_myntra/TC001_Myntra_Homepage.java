@@ -2,6 +2,7 @@ package testcases_myntra;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.openqa.selenium.Keys;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -23,9 +24,9 @@ public class TC001_Myntra_Homepage extends ProjectMethods{
 		dataSheetName="TC021";
 	}
 	@Test(dataProvider="fetchData")
-	public void HomePage(String value) throws InterruptedException {
+	public void HomePage(String data) throws InterruptedException {
 		new Myntra_HomePage()
-		.enterValue(value)
+		.enterValue(data)
 		.findlessValues()
 		.uniqueProducts()
 		.clickOnColor();

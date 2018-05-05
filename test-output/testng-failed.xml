@@ -3,18 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases_landsend.TC012_SSalesOrder">
+      <class name="testcases_myntra.TC001_Myntra_Homepage">
         <methods>
+          <include name="setData"/>
           <include name="afterTest"/>
+          <include name="HomePage" invocation-numbers="0"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
-          <include name="setData"/>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="sSalesOrder" invocation-numbers="0"/>
           <include name="beforeClass"/>
         </methods>
-      </class> <!-- testcases_landsend.TC012_SSalesOrder -->
+      </class> <!-- testcases_myntra.TC001_Myntra_Homepage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
