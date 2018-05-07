@@ -172,7 +172,7 @@ public class SeMethods extends Reporter implements WdMethods{
 		String bReturn = "";
 		try {
 			bReturn = ele.getText();
-			reportStep("The element :"+bReturn+"  is present.", "PASS");
+			reportStep("The element :"+ele+"  is present.", "PASS");
 		} catch (WebDriverException e) {
 			reportStep("The element: "+ele+" could not be found.", "FAIL");
 		}
