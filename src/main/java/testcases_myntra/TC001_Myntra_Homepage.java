@@ -26,7 +26,7 @@ public class TC001_Myntra_Homepage extends ProjectMethods{
 	@Test(dataProvider="fetchData")
 	public void HomePage(String data) throws InterruptedException {
 		new Myntra_HomePage()
-		.enterValue(data)
+		.enterValue(data,Keys.ENTER)
 		.findlessValues()
 		.uniqueProducts()
 		.clickOnColor();

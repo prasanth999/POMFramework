@@ -2,51 +2,77 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35120" started-at="2018-05-05T15:45:13Z" finished-at="2018-05-05T15:45:48Z">
+  <suite name="Default suite" duration-ms="50377" started-at="2018-07-12T01:02:11Z" finished-at="2018-07-12T01:03:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35120" started-at="2018-05-05T15:45:13Z" finished-at="2018-05-05T15:45:48Z">
-      <class name="testcases_myntra.TC001_Myntra_Homepage">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases_myntra.TC001_Myntra_Homepage@6536e911]" name="beforeSuite" is-config="true" duration-ms="1757" started-at="2018-05-05T15:45:12Z" finished-at="2018-05-05T15:45:13Z">
+    <test name="Default test" duration-ms="50377" started-at="2018-07-12T01:02:11Z" finished-at="2018-07-12T01:03:01Z">
+      <class name="testcases_landsend.TC003_Account_Creation">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases_landsend.TC003_Account_Creation@6b09bb57]" name="beforeSuite" is-config="true" duration-ms="2716" started-at="2018-07-12T01:02:08Z" finished-at="2018-07-12T01:02:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:testcases_myntra.TC001_Myntra_Homepage@6536e911]" name="setData" is-config="true" duration-ms="1" started-at="2018-05-05T15:45:13Z" finished-at="2018-05-05T15:45:13Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases_landsend.TC003_Account_Creation@6b09bb57]" name="setData" is-config="true" duration-ms="0" started-at="2018-07-12T01:02:11Z" finished-at="2018-07-12T01:02:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases_myntra.TC001_Myntra_Homepage@6536e911]" name="beforeClass" is-config="true" duration-ms="1" started-at="2018-05-05T15:45:13Z" finished-at="2018-05-05T15:45:13Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases_landsend.TC003_Account_Creation@6b09bb57]" name="beforeClass" is-config="true" duration-ms="0" started-at="2018-07-12T01:02:11Z" finished-at="2018-07-12T01:02:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases_myntra.TC001_Myntra_Homepage@6536e911]" name="beforeMethod" is-config="true" duration-ms="11522" started-at="2018-05-05T15:45:14Z" finished-at="2018-05-05T15:45:26Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases_landsend.TC003_Account_Creation@6b09bb57]" name="beforeMethod" is-config="true" duration-ms="11502" started-at="2018-07-12T01:02:12Z" finished-at="2018-07-12T01:02:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="HomePage(java.lang.String)[pri:0, instance:testcases_myntra.TC001_Myntra_Homepage@6536e911]" name="HomePage" duration-ms="22917" started-at="2018-05-05T15:45:26Z" data-provider="fetchData" finished-at="2018-05-05T15:45:48Z">
+        <test-method status="PASS" signature="accountCreation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases_landsend.TC003_Account_Creation@6b09bb57]" name="accountCreation" duration-ms="38158" started-at="2018-07-12T01:02:23Z" data-provider="fetchData" finished-at="2018-07-12T01:03:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[sunglasses]]>
+                <![CDATA[prasanth.sundaresan@landsend.com.qa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[May@2018]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TestLeaf1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Prasanth1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9994806686]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[PO 13 BOX]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[80]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HomePage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases_myntra.TC001_Myntra_Homepage@6536e911]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-05-05T15:45:48Z" finished-at="2018-05-05T15:45:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases_myntra.TC001_Myntra_Homepage@6536e911]" name="afterTest" is-config="true" duration-ms="16" started-at="2018-05-05T15:45:48Z" finished-at="2018-05-05T15:45:48Z">
+        </test-method> <!-- accountCreation -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases_landsend.TC003_Account_Creation@6b09bb57]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-07-12T01:03:01Z" finished-at="2018-07-12T01:03:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases_myntra.TC001_Myntra_Homepage@6536e911]" name="afterSuite" is-config="true" duration-ms="747" started-at="2018-05-05T15:45:49Z" finished-at="2018-05-05T15:45:49Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases_landsend.TC003_Account_Creation@6b09bb57]" name="afterSuite" is-config="true" duration-ms="784" started-at="2018-07-12T01:03:01Z" finished-at="2018-07-12T01:03:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- testcases_myntra.TC001_Myntra_Homepage -->
+      </class> <!-- testcases_landsend.TC003_Account_Creation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

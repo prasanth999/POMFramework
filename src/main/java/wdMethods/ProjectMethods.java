@@ -44,11 +44,11 @@ public class ProjectMethods extends SeMethods{
 	public void afterTest(){
 	}
 
-	@AfterMethod
+	/*@AfterMethod
 	public void afterMethod(){
 		closeAllBrowsers();
 
-	}
+	}*/
 
 	@DataProvider(name="fetchData")
 	public  Object[][] getData(){

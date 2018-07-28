@@ -28,7 +28,7 @@ public class Myntra_PDPpage extends ProjectMethods {
 
 	@FindBy(how=How.XPATH,using="//strong[@class='pdp-price']")
 	private WebElement eleGetPrice;
-	@When("verify the product price")
+	@When("get the product price")
 	public String getPrice() {
 
 		text1 =  getText(eleGetPrice);

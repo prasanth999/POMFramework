@@ -33,7 +33,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import javafx.scene.AccessibleAction;
 import utils.Reporter;
 
 public class SeMethods extends Reporter implements WdMethods{
@@ -127,7 +126,7 @@ public class SeMethods extends Reporter implements WdMethods{
 	public void typeEnter(WebElement ele, String data,Keys keys) {
 		try {
 			ele.clear();
-			ele.sendKeys(data,keys);
+			ele.sendKeys(data,keys.ENTER);
 			String x = ""+ele;
 			reportStep("The data: "+data+" entered successfully in the field :"+ele, "PASS");
 		} catch (InvalidElementStateException e) {
@@ -172,7 +171,7 @@ public class SeMethods extends Reporter implements WdMethods{
 		String bReturn = "";
 		try {
 			bReturn = ele.getText();
-			reportStep("The element :"+ele+"  is present.", "PASS");
+			reportStep("The element :"+bReturn+"  is present.", "PASS");
 		} catch (WebDriverException e) {
 			reportStep("The element: "+ele+" could not be found.", "FAIL");
 		}

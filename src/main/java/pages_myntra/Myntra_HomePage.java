@@ -29,8 +29,8 @@ public class Myntra_HomePage extends ProjectMethods {
 	@FindBy(how=How.CLASS_NAME,using="desktop-searchBar")
 	private WebElement eleEnterValue;
 	@And("Enter the sunglass from the search textbox as (.*)")
-	public Myntra_HomePage enterValue(String data) {
-		typeEnter(eleEnterValue, data, Keys.ENTER);
+	public Myntra_HomePage enterValue(String data,Keys keys) {
+		typeEnter(eleEnterValue, data,keys.ENTER);
 		return this;
 	}
 
@@ -48,6 +48,7 @@ public class Myntra_HomePage extends ProjectMethods {
 			String value = wb.getText();
 
 			System.out.println(value);
+			reportStep("The element :"+value+"  is present.", "PASS");
 		}
 		return this;
 	}
@@ -70,6 +71,8 @@ public class Myntra_HomePage extends ProjectMethods {
 		
 		System.out.println(names);
 		
+		reportStep("The element :"+names+"  is present.", "PASS");
+		
 		Thread.sleep(2000);
 		
 		return this;
@@ -91,7 +94,7 @@ public class Myntra_HomePage extends ProjectMethods {
 	
 	@FindBy(how=How.XPATH,using="(//div[@class='product-productMetaInfo']/div[1])[2]")
 	private WebElement eleGetProductName;
-	
+	@When("get the product name")
 	public String getProductName() {
 	
 		text =  getText(eleGetProductName);
